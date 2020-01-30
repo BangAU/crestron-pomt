@@ -1,0 +1,73 @@
+/*
+    88""Yb 888888 88""Yb  dP"Yb  88""Yb 888888
+    88__dP 88__   88__dP dP   Yb 88__dP   88
+    88"Yb  88""   88"""  Yb   dP 88"Yb    88
+    88  Yb 888888 88      YbodP  88  Yb   88
+*/
+.dataTables_wrapper * {
+    font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+    color: #727d84!important;                                               //  basic text color
+}
+
+.dt-buttons,
+.dataTables_Filter {
+    margin: 2rem 1rem;
+}
+.dataTables_Filter {
+    margin-top: 2.5rem;
+}
+.dataTables_Info,
+.dataTables_paginate {
+    margin: 1rem;
+}
+
+.report {
+    margin-top: 1rem!important;
+    border: 1px solid #000;
+}
+
+.report tr.odd {
+    background: #e4f0f6!important;                                          //  brand color at 10%
+}
+.report tr.even {
+    background: #fff!important;
+}
+.report__header {
+    background: #f8f8f8;                                                    //  #dbdbdb at 20%
+    vertical-align: bottom;
+}
+    .report__header th {
+        color: #3687bc!important;                                           //  brand color at 100%
+    }
+.report__footer {
+    background: #f8f8f8;                                                    //  #dbdbdb at 20%
+    vertical-align: top;
+}
+    .report__footer th {
+        color: #3687bc!important;                                           //  brand color at 100%
+    }
+
+.report__first-cell {
+    border-right: 1px solid #ddd;
+    background: #f8f8f8;                                                    //  #dbdbdb at 20%
+    text-align: right;
+}
+    .report tr.odd .report__first-cell {
+        background: #d7e3ea!important;                                      //  brand color at 10% + #dbdbdb at 40%
+    }
+.report__number {
+    text-align: right;
+}
+.report__result {
+    background: #f0f0f0;                                                    //  #dbdbdb at 40%
+    text-align: center;
+    font-weight: bold;
+}
+    .report tr.odd .report__result {
+        background: #d7e3ea!important;                                      //  brand color at 10% + #dbdbdb at 40%
+    }
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {           //  brand color at 50% => 100%
+    background: -webkit-linear-gradient(#7cb5d6 0%, #006aac 100%);   
+    background: -o-linear-gradient(#7cb5d6 0%, #006aac 100%);
+    background: linear-gradient(#7cb5d6 0%, #006aac 100%);
+}

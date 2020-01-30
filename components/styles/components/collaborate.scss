@@ -1,0 +1,38 @@
+.collaborate{
+    padding: 100px 0;
+    position: relative;
+    &:after{
+        position: absolute;
+        content: '';
+        width: 360px;
+        height: 180px;
+        background: #ffcc36;
+        bottom: 20%;
+        left: -8%;
+        border-top-left-radius: 350px;
+        border-top-right-radius: 350px;
+        transform: rotate(90deg);
+        margin-bottom: 30px;
+
+        clear: both;
+    }
+}
+.collaborate-wrap{
+    max-width: 980px;
+    margin: 0 auto;
+}
+.collaborate h2 {
+    color: #fff;
+    width: 70%;
+    margin-bottom: 5%;
+}
+.collaborate-container {
+    display: flex;
+    justify-content: space-between;
+}
+.collaborate-left{
+    width: 42%;
+}
+.collaborate-right{
+    width: 45%;
+}

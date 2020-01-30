@@ -1,0 +1,37 @@
+.left-footer{
+    display: flex;
+    flex-direction: row;
+    a{
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        margin: 0 20px;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            background: #ccc;
+            right: -20px;
+            height: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: default;
+        }
+        &:last-child {
+            &:after{
+                display: none;
+            }
+        }
+    }
+}
+.footer-container{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    .container{
+        padding: 0 !important;
+    }
+}
+.footer-contents{
+    display: flex;
+    justify-content: space-between;
+}

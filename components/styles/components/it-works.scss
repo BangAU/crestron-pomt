@@ -1,0 +1,84 @@
+.it-works{
+    overflow: hidden;
+}
+.it-works-container {
+    background: $color-white;
+    display: flex;
+    flex-direction: row;
+    padding: 130px 0;
+    align-items: center;
+}
+
+.it-works-left-panel {
+    width: 53%;
+    padding: 0 2% 0 9%;
+    justify-content: center;
+    color: #001e41;
+    h2{
+        color: #012f66;
+        width: 80%;
+    }
+}
+.it-works-logo-content{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: baseline;
+    margin-top: 10%;
+    img{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    a{
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        margin: 0 20px;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            background: #707070;
+            right: -20px;
+            height: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: default;
+        }
+        &:last-child {
+            &:after{
+                display: none;
+            }
+        }
+    }
+
+}
+
+.it-works-right-panel {
+    width: 46.5%;
+    position: relative;
+    &:after{
+        position: absolute;
+        content: '';
+        width: 216px;
+        height: 108px;
+        background: red;
+        bottom: -14%;
+        left: -10%;
+        border-top-left-radius: 216px;
+        border-top-right-radius: 216px;
+    }
+    .top-img {
+        position: absolute;
+        top: -22%;
+        left: 43%;
+        z-index: 2;
+    }
+    .main-img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        right: -30px;
+    }
+}

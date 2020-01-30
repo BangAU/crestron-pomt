@@ -1,0 +1,19 @@
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin font-styles ($font-family, $weight) {
+    font-family: $font-family;
+    font-weight: $weight;
+}
