@@ -1,6 +1,10 @@
 .performance {
     padding-top: 100px;
     text-align: center;
+
+    @include respond-to(tablet) {
+        padding-top: 50px;
+    }
 }
 .performance h2{
     color: #fff;
@@ -8,16 +12,26 @@
 
 .performance-contents {
     display: flex;
-    max-width: 1060px;
+    max-width: 1115px;
     margin: 0 auto;
     align-content: center;
     flex-direction: row;
     text-align: center;
     align-items: center;
     justify-content: space-between;
+
+    @include respond-to(tablet) {
+        flex-direction: column;
+        width: 100%;
+    }
 }
 .side{
-    width: 27%;
+    width: 30%;
+
+    @include respond-to(tablet) {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
 .side .img-wrap{
     display: flex;

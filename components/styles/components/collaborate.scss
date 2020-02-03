@@ -1,38 +1,90 @@
 .collaborate{
     padding: 100px 0;
     position: relative;
+
+    @include respond-to(tablet) {
+        padding: 50px 0;
+    }
+
     &:after{
         position: absolute;
         content: '';
-        width: 360px;
+        width: 260px;
         height: 180px;
         background: #ffcc36;
         bottom: 20%;
-        left: -8%;
+        left: -120px;
         border-top-left-radius: 350px;
         border-top-right-radius: 350px;
         transform: rotate(90deg);
         margin-bottom: 30px;
-
         clear: both;
+
+        @include respond-to(desktop) {
+            display: none;
+        }
+
+        @include respond-to(tablet) {
+            display: none;
+        }
     }
 }
+
 .collaborate-wrap{
-    max-width: 980px;
-    margin: 0 auto;
+    max-width: 1185px;
+    margin: 0 75px;
+
+    @include respond-to(desktop) {
+        margin: 0 15px;
+    }
+
 }
 .collaborate h2 {
     color: #fff;
     width: 70%;
     margin-bottom: 5%;
+    @include respond-to(mobile-large) {
+        text-align: center;
+        width: 100%;
+    }
+
 }
 .collaborate-container {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+
+    @include respond-to(tablet) {
+        flex-direction: row;
+    }
+
+    @include respond-to(mobile-large) {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
 }
 .collaborate-left{
-    width: 42%;
+    width: 50%;
+
+    @include respond-to(large-desktop) {
+        padding-right: 20px;
+    }
+
+    @include respond-to(mobile-large) {
+        width: 100%;
+    }
 }
 .collaborate-right{
-    width: 45%;
+    width: 50%;
+
+    @include respond-to(mobile-large) {
+        width: 100%;
+    }
+}
+
+.middle-red-line {
+    @include respond-to(large-desktop) {
+        display: none;
+    }
 }

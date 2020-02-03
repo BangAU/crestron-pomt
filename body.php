@@ -1,6 +1,6 @@
 <section class="top-page">
   <header id="header">
-    <div class="menu">
+    <!-- <div class="menu">
       <div class="container">
         <nav id="nav">
           <input type="checkbox" id="show-mobile">
@@ -16,11 +16,11 @@
           </ul>
         </nav>
       </div>
-    </div>
+    </div> -->
     <div class="logo-container">
       <div class="container">
-        <a href="https://www.crestron-partners.com.au/" target="_blank"><img src="images/logo-crestron.png" width="177" alt="Crestron Partners"></a>
-        <a href="https://www.crestron-partners.com.au/" target="_blank"><img src="images/logo-pomt.svg" width="111" alt="Ten Four"></a>
+        <a href="https://www.crestron.com/" target="_blank"><img src="images/logo-crestron.png" width="177" alt="Crestron Partners"></a>
+        <a href="https://pomt.com/" target="_blank"><img src="images/logo-pomt.svg" width="111" alt="POMT"></a>
       </div>
     </div>
   </header>
@@ -45,7 +45,7 @@
           </h1>
           <p>An exceptional and productive workplace experience goes beyond collaboration technology and AV equipment. It should instead encompass engagement, experience, change management, and the design of physical and virtual spaces better geared towards human behaviour.</p>
           <div class="btn-holder">
-            <a href="#" class="btn">GET IN TOUCH</a>
+          <a href="#work" class="btn btn-anchor">GET IN TOUCH</a>
           </div>
         </div>
       </div>
@@ -62,8 +62,8 @@
           <p>Together, Peace Of Mind Technology (POMT) and Crestron bring you expertly engineered and supported unified communications and audio-visual solutions that will positively transform your team’s workplace experience.  </p>
           <p>POMT provides you with an end-to-end service, including consultancy, implementation, and managed services, including enablement and adoption services.</p>
           <div class="it-works-logo-content">
-             <a href="https://www.crestron-partners.com.au/" target="_blank"><img src="images/crestron-middle-logo.png" width="177"  alt="Crestron Partners"></a>
-             <a href="https://www.crestron-partners.com.au/" target="_blank"><img src="images/logo-pomt.svg" width="111" height="40px" alt="POMT"></a>
+             <a href="https://www.crestron.com/" target="_blank"><img src="images/crestron-middle-logo.png" width="177"  alt="Crestron Partners"></a>
+             <a href="https://pomt.com/" target="_blank"><img src="images/logo-pomt.svg" width="111" height="40px" alt="POMT"></a>
           </div>
         </div>
       </div>
@@ -132,16 +132,17 @@
     <div class="container">
       <div class="believe-container">
         <div class="believe-left">
-          <h2>Believe in Crestron</h2>
-          <p>For more than 45 years, Crestron has helped businesses like yours with beautifully engineered automation, audio visual and unified communications equipment for modern workplaces.
-          </p> 
-          <p> Crestron technology simply works wonders, producing inspired collaboration you can believe in.</p>
-          <a class="btn">Find out more</a>
+          <div class="content-wrapper">
+            <h2>Believe in Crestron</h2>
+            <p>For more than 45 years, Crestron has helped businesses like yours with beautifully engineered automation, audio visual and unified communications equipment for modern workplaces.
+            </p> 
+            <p> Crestron technology simply works wonders, producing inspired collaboration you can believe in.</p>
+            <a class="btn" target="_blank" href="https://believeincrestron.com">Find out more</a>
+          </div>
         </div>
         <div class="believe-right">
           <div class="video-holder">
-            <iframe src="https://www.youtube.com/embed/amuH0Gs5ZhjhhjY" frameborder="0" style="    width: 663px;
-        height: 404px;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/amuH0Gs5ZhjhhjY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>

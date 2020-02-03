@@ -1,13 +1,18 @@
 .work{
-    padding-top: 130px;
     overflow: hidden;
 }
+
 .work-container {
     background-color: white;
     text-align: center;
     position: relative;
     padding: 80px 0 20px;
     color: #001e41;
+
+    @include respond-to(desktop) {
+        padding: 40px 20px;
+    }
+
     &:after{
         position: absolute;
         content: '';
@@ -18,6 +23,10 @@
         right: -168px;
         border-top-left-radius: 216px;
         border-top-right-radius: 216px;
+
+        @include respond-to(desktop) {
+            display: none;
+        }
     }
     .error{
         display: block;
@@ -29,6 +38,7 @@
         color: #ffcc36;
         display: none;
         margin: 40px 0;
+        min-height: 150px;
     }
     .left-straight-block{
         &:after{
@@ -36,10 +46,14 @@
             content: '';
             width: 51px;
             height: 287px;
-            background: blue;
-            bottom: 213px;
+            background: #0242ba;
+            top: 50%;
+            transform: translateY(-50%);
             left: -18px;
             z-index: 1;
+            @include respond-to(desktop) {
+                display: none;
+            }
         }
     }
     .red-left-line-works{
@@ -50,8 +64,12 @@
         transform: rotate(270deg);
         z-index: 20;
         position: absolute;
-        bottom: -6%;
+        bottom: calc(50% - 350px);
         left: -17%;
+
+        @include respond-to(desktop) {
+            display: none;
+        }
     }
 }
 
@@ -72,16 +90,31 @@
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 30px;
+    flex-direction: row;
+
+    @include respond-to(desktop) {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 }
 
 .work-form .form-group .col {
     float: none;
     width: 43%;
+
+    @include respond-to(desktop) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 .work-form textarea{
-    width: 91%;
+    width: 90%;
     resize: none;
+
+    @include respond-to(desktop) {
+        width: 100%;
+    }
 }
 
 .work-form .jcf-select{
@@ -131,6 +164,9 @@
                     color: #012f66;
                     background: #fff;
                 }
+                span{
+                    display: block;
+                }
             }
         }
     }
@@ -152,6 +188,8 @@
     }
 }
 
-/* input::-webkit-calendar-picker-indicator {
-    opacity: 100;
-} */
+.work-form-content-wrapper {
+    margin-bottom: 40px;
+    display: inline-block;
+    width: 100%;
+}

@@ -1,20 +1,71 @@
 
 .believe {
-    padding-top: 100px;
+    padding: 130px 0;
+
+    @include respond-to(tablet) {
+        padding: 50px 0;
+    }
 }
 
 .believe-container {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+
+    @include respond-to(desktop) {
+        flex-direction: column;
+    }
+    @include respond-to(mobile-large) {
+        text-align: center;
+    }
 }
 
 .believe-left {
-    width: 40%;
+    width: 50%;
     text-align: left;
+
+    @include respond-to(desktop) {
+        width: 100%;
+    }
+    @include respond-to(mobile-large) {
+        text-align: center;
+    }
+    .content-wrapper {
+        max-width: 500px;
+        padding-right: 50px;
+
+        @include respond-to(desktop) {
+            max-width: none;
+        }
+        @include respond-to(mobile-large) {
+            padding-right: 0;
+        }
+    }
+
     h2{
         margin-bottom: 40px;
     }
     .btn{
         margin-top: 50px;
+
+        @include respond-to(desktop) {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+.believe-right {
+    width: 50%;
+
+    @include respond-to(desktop) {
+        width: 100%;
+    }
+
+    iframe {
+        min-height: 400px;
+        height: auto;
+        width: 100%;
     }
 }

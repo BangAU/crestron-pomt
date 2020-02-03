@@ -6,8 +6,6 @@ require ('jquery-validation');
 import jcf from 'jcf';
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('amr test');
-    console.log('test test');
     AOS.init();
 
     var $doc = $(document);
@@ -65,6 +63,15 @@ document.addEventListener('DOMContentLoaded', function() {
         
     })
 
+    // scroll link animation
+    $(function() {
+        $('#nav ul a, .btn-anchor').on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 600, 'linear');
+        });
+    });
+
+    //custom forms
     jcf.setOptions('Select', {
         wrapNative: false,
         wrapNativeOnMobile: false,

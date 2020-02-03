@@ -4,24 +4,33 @@
     display: flex;
     height: 100vh;
     align-items: center;
+    justify-content: center;
     position: relative;
+    flex-direction: column;
+    @include respond-to(mobile-large){
+        padding-top: 5%;
+    }
 }
+
 header{
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 30px;
 }
+
 .menu{
+    display: none;
     &:after{
         content: '';
         clear: both;
         display: block;
     }
 }
+
 #nav{
     float: right;
     position: relative;
-    margin-top: 3%;
+
     span{
         position: relative;
         z-index: 20;
@@ -35,6 +44,7 @@ header{
             margin-bottom: 0;
         }
     }
+
     input{
         position: absolute;
         z-index: 25;
@@ -57,6 +67,7 @@ header{
             }
         }
     }
+
     ul{
         position: absolute;
         z-index: 10;
@@ -79,17 +90,17 @@ header{
         a{
             color: #6c6c6c;
             text-decoration: none;
-            &.yellow{ color: yellow; }
             &:hover,
             &:focus{
-                color: blue;
+                color: #012f66;
             }
         }
     }
 }
+
 .logo-container {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
     a{
         display: inline-block;
         position: relative;
@@ -112,22 +123,36 @@ header{
             }
         }
     }
+    img{
+        @include respond-to(mobile-large) {
+            max-width: 130px;
+        }
+    }
 }
 
 .banner{
-    padding-top: 2%;
+    display: inline-block;
     width: 100%;
+    .container{
+        overflow: hidden;
+    }
 }
+
 .banner-image{
     margin: 60px 0;
 }
+
 .banner-holder{
     position: relative;
     overflow: hidden;
-    max-width: 1028px;
+    max-width: 950px;
     margin: 0 auto;
     width: 100%;
     background: #fff;
+
+    @include respond-to(desktop) {
+        max-width: 700px;
+    }
 }
 .bg-back{
     position: absolute;
@@ -161,11 +186,4 @@ header{
 }
 .btn-holder{
     padding-top: 40px;
-}
-
-// Responsive coding
-@include respond-to(desktop){
-    .top-page{
-        height: 99vh;
-    }
 }

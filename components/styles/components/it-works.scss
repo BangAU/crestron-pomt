@@ -1,39 +1,78 @@
 .it-works{
     overflow: hidden;
+    margin: 50px 0;
 }
+
 .it-works-container {
     background: $color-white;
     display: flex;
     flex-direction: row;
-    padding: 130px 0;
+    padding: 130px 75px;
     align-items: center;
+
+    @include respond-to(desktop) {
+        flex-direction: column;
+        padding: 25px;
+    }
+    @include respond-to(mobile-large) {
+        text-align: center;
+    }
+
+}
+
+.it-works-container-content {
+    max-width: 1115px;
 }
 
 .it-works-left-panel {
-    width: 53%;
-    padding: 0 2% 0 9%;
+    width: 50%;
     justify-content: center;
     color: #001e41;
     h2{
         color: #012f66;
-        width: 80%;
+    }
+
+    @include respond-to(desktop) {
+        width: 100%;
     }
 }
+
+.it-works-content {
+    max-width: 500px;
+    padding-right: 50px;
+
+    @include respond-to(desktop) {
+        max-width: none;
+        padding-right: 0;
+    }
+}
+
 .it-works-logo-content{
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-    align-items: baseline;
-    margin-top: 10%;
+    text-align: left;
+    margin-top: 40px;
+
+    @include respond-to(desktop) {
+        margin-bottom: 40px;
+    }
+    @include respond-to(mobile-large) {
+        text-align: center;
+    }
+
     img{
         display: inline-block;
         vertical-align: middle;
+        @include respond-to(mobile-large) {
+            max-width: 130px;
+        }
     }
     a{
         display: inline-block;
         position: relative;
         vertical-align: middle;
         margin: 0 20px;
+        @include respond-to(mobile-large) {
+            margin: 0 10px;
+        }
         &:after {
             content: '';
             position: absolute;
@@ -44,6 +83,12 @@
             top: 50%;
             transform: translateY(-50%);
             cursor: default;
+            @include respond-to(mobile-large) {
+                right: -10px;
+            }
+        }
+        &:first-child{
+            margin-left: 0;
         }
         &:last-child {
             &:after{
@@ -55,8 +100,13 @@
 }
 
 .it-works-right-panel {
-    width: 46.5%;
+    width: 50%;
     position: relative;
+
+    @include respond-to(desktop) {
+        width: 100%;
+    }
+
     &:after{
         position: absolute;
         content: '';
@@ -67,12 +117,21 @@
         left: -10%;
         border-top-left-radius: 216px;
         border-top-right-radius: 216px;
+
+        @include respond-to(desktop) {
+            display: none;
+        }
+
     }
     .top-img {
         position: absolute;
         top: -22%;
         left: 43%;
         z-index: 2;
+
+        @include respond-to(desktop) {
+            display: none;
+        }
     }
     .main-img {
         position: relative;
@@ -80,5 +139,9 @@
         width: 100%;
         height: auto;
         right: -30px;
+
+        @include respond-to(desktop) {
+            right: 0;
+        }
     }
 }
