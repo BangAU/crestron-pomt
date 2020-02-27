@@ -60,6 +60,57 @@
 }
 
 .footer-container{
-    padding-top: 3%;
     padding-bottom: 3%;
+    hr{
+        margin: 22px 0;
+    }
+    p{
+        line-height: 1.5em;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    .footer-legal-links{
+        position: relative;
+        a{
+            margin: 0 20px 0 0;
+            text-decoration: underline;
+            color: #ccc;
+            &:hover{
+                text-decoration: none;
+                font-weight: 700;
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                width: 1px;
+                background: white;
+                height: 15px;
+                margin-left: 9px;
+                top: 10px;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+            &:last-of-type::after{
+                display: none;
+            }
+        }
+    }
+}
+.last-msg{
+    p{
+        margin: 70px auto;
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.1875;
+        max-width: 650px;
+    }
+    a{
+        text-decoration: underline;
+        color: white;
+    }
+    a:hover{
+        text-decoration: none;
+    }
 }

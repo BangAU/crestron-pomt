@@ -35,10 +35,13 @@
         color: red;
     }
     .message-success{
-        color: #ffcc36;
+        color: #001e41;
         display: none;
         margin: 40px 0;
         min-height: 150px;
+        font-weight: 400;
+        font-size: 22px;
+        margin-top: 10px;
     }
     .left-straight-block{
         &:after{
@@ -192,4 +195,21 @@
     margin-bottom: 40px;
     display: inline-block;
     width: 100%;
+}
+.terms{
+    a{
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+    p{
+        margin-top: 20px;
+    }
+}
+.middle-logo{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
 }
