@@ -201,6 +201,9 @@
           <div class="form-group btn-holder">
             <input type="submit" class="btn btn-submit" value="submit">
           </div>
+          <div class="form-group terms">
+          <p>By submitting your information you consent to the use of that information as set out in the <a href="https://www.crestron.com/legal/website-terms_of_use" target="_blank">Terms of Use</a> and <a href="https://www.crestron.com/legal/privacy-policy" target="_blank">Privacy Policy</a></p>
+          </div>
         </form>
         <div class="message-success">
           <p>Thanks for reaching out to us! A local Crestron expert will be in touch with you shortly.</p>
