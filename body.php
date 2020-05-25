@@ -125,7 +125,7 @@
         </div>
         <div class="believe-right">
           <div class="video-holder">
-            <iframe src="https://www.youtube.com/embed/Sr0KYPLVUvw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <iframe src="https://www.youtube.com/embed/Sr0KYPLVUvw?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
           </div>
         </div>
       </div>

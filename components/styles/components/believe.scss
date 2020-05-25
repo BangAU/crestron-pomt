@@ -31,7 +31,7 @@
         text-align: center;
     }
     .content-wrapper {
-        max-width: 500px;
+        max-width: 550px;
         padding-right: 50px;
 
         @include respond-to(desktop) {
