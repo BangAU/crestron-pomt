@@ -14,10 +14,8 @@
     display: flex;
     max-width: 1115px;
     margin: 0 auto;
-    align-content: center;
     flex-direction: row;
     text-align: center;
-    align-items: center;
     justify-content: space-between;
 
     @include respond-to(tablet) {

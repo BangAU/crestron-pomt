@@ -181,7 +181,8 @@
     }
 }
 
-.work-form .btn{
+.work-form input[type="submit"]{
+    margin-top: 30px;
     background: #012f66;
     color: #fff;
     &:hover,
