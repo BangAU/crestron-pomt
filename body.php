@@ -14,7 +14,7 @@
           <div id="bgBack" class="bg-back" style="background-position: absolute;">
           </div>
           <div class="bg-front">
-            <img src="https://storage.pardot.com/767943/36740/banner_front.png" width="1028" height="310" alt="">
+            <img src="https://storage.pardot.com/767943/50926/banner_front.png" width="1028" height="310" alt="">
           </div>
         </div>
       </div>
@@ -189,9 +189,6 @@
         <div class="form-group terms">
           <p>By submitting your information you consent to the use of that information as set out in the <a href="https://www.crestron.com/legal/website-terms_of_use" target="_blank">Terms of Use</a> and <a href="https://www.crestron.com/legal/privacy-policy" target="_blank">Privacy Policy</a></p>
         </div>
-        <div class="message-success">
-          <p>Thanks for reaching out to us! A local Crestron expert will be in touch with you shortly.</p>
-        </div> <!-- end .message-success -->
       </div>
 
       <div class="left-straight-block">
