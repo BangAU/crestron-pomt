@@ -35,6 +35,14 @@
       </div>
     </div>
   </div>
+
+  <div class="powered-by top">
+    <p>Simple meeting room technology for</p>
+    <div class="logo-holder">
+        <span><img width="110" src="https://storage.pardot.com/767943/51328/logo_ms_white.svg" alt=""></span>
+        <span><img width ="50" src="https://storage.pardot.com/767943/51346/logo_zoom_white.svg" alt=""></span>
+    </div>
+  </div>
 </section>
 
 <section class="it-works" id="it-works">
@@ -43,13 +51,20 @@
       <div class="it-works-left-panel">
         <div class="it-works-content">
           <h2>Just know it works</h2>
+          <div class="powered-by">
+            <p>Simple meeting room technology powered by</p>
+            <div class="logo-holder">
+                <span><img width="180" src="https://storage.pardot.com/767943/51326/logo_ms_colored.svg" alt=""></span>
+                <span><img width ="65" src="https://storage.pardot.com/767943/51344/logo_zoom_colored.svg" alt=""></span>
+            </div>
+          </div>
           <p>POMT leverages <strong>Crestron’s best-of-breed unified communications and audio visual solutions</strong> to deliver consistent, intuitive, high performance collaborative physical environments.</p>
           <p>Crestron's range of hardware, combined with POMT’s expert design and deployment, ensures scalability with the right solution for each setting and environment securing a reliable and familiar user experience.</p>
           <p>Crestron’s deployment and management tools are utilised by POMT to guarantee maximum up-time, security and flexibility in initial deployment and as part of ongoing managed services.</p>
-          <div class="it-works-logo-content">
+          <!-- <div class="it-works-logo-content">
              <a href="https://www.crestron.com/" target="_blank"><img src="https://go.crestroninfo.com/l/767943/2020-03-06/4lxx47/767943/36748/crestron_middle_logo.png" width="177" alt="Crestron Partners"></a>
              <a href="https://pomt.com" target="_blank"><img src="https://storage.pardot.com/767943/50894/logo_pomt.svg" width="111" alt="Ten Four"></a>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="it-works-right-panel">

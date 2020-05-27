@@ -41,7 +41,7 @@ $rfs-mode: max-media-query !default;
 $rfs-class: false !default;
 
 // 1 rem = $rfs-rem-value px
-$rfs-rem-value: 16 !default;
+$rfs-rem-value: 10 !default;
 
 // Safari iframe resize bug: https://github.com/twbs/rfs/issues/14
 $rfs-safari-iframe-resize-bug-fix: false !default;

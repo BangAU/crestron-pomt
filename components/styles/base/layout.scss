@@ -31,3 +31,63 @@ body {
         padding: 0 15px;
     }
 }
+
+.powered-by{
+    @include font-size(2.2rem);
+    padding-bottom: 30px;
+
+    .logo-holder{
+        span{
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            margin: 0 20px;
+            &:after{
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: 40px;
+                background: #707070;
+                right: -20px;
+                top: 5px;
+            }
+            &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+    &.top{
+        width: 190px;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        @include font-size(1.4rem);
+        padding-bottom: 0;
+
+        @include respond-to(mobile-large) {
+            display: none;
+        }
+
+        p{
+            margin: 0 0 5px;
+        }
+        .logo-holder{
+            span{
+                margin: 0 10px;
+                &:first-child{
+                    margin: 0;
+                }
+                &:after{
+                    height: 30px;
+                    top: 0;
+                    right: -8px;
+                }
+            }
+        }
+    }
+}
