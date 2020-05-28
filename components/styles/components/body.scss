@@ -143,17 +143,20 @@ textarea {
     color: #414141;
 }
 ::placeholder {
-    color: #414141;
+    color: #999;
     opacity: 1;
     font-weight: 200;
 }
 :-ms-input-placeholder {
-    color: #414141;
+    color: #999;
     font-weight: 200;
 }
 ::-ms-input-placeholder {
-    color: #414141;
+    color: #999;
     font-weight: 200;
+}
+input:focus::placeholder {
+    color: transparent;
 }
 
 input:-webkit-autofill,
