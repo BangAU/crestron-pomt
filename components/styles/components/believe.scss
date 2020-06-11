@@ -63,9 +63,17 @@
         width: 100%;
     }
 
+    .video-holder{
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+    }
+
     iframe {
-        min-height: 400px;
-        height: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
         width: 100%;
     }
 }
